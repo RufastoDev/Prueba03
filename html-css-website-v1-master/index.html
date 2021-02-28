@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Cangri Perú</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-icicles" id="icono_logoo"></i> LOS CANGRI</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/playlist.html" class="navbar__links">Playlist</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links">Nosotros</a>
+          </li>
+          <li class="navbar__btn"><a href="/tech.html" class="button"> Eventos</a></li>
+        </ul>
+      </div>
+    </nav>
+    <audio style="display: none;" id="audio">
+      <source src="/audio/TheBusiness.mp3" type="audio/mp3">
+    </audio>
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>MUY PRONTO</h1>
+          <h2>VOLVEREMOS AL SHOW</h2>
+          <p>Escucha nuestras playlist y mixes.</p>
+          <button class="main__btn"><a href="#" class="changeText" onclick="playAndPause();">Play here</a></button>
+        </div>
+        <div class="main__img--container">
+          <img id="main__img" src="images/ok.jpg" width="600" height="400"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+      <h1>De Chiclayo para el mundo</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Chelina Manuhutu</h2>
+          <p>Destacada dj en la industria de la música electrónica, a tocado en grandes clubes de Ibiza</p>
+          <button onclick="changePage();">Ver más</button>
+        </div>
+        <div class="services__card">
+          <h2>Ammo Avenue</h2>
+          <p>Dj y productor peruano, su música a logrado llegar a los top 100 tracks de Beatport</p>
+          <button onclick="changePage();">Ver más</button>
+        </div> 
+        <div class="services__card">
+          <h2>Dj Carpio</h2>
+          <p>Larga trayectoria en el género urbano, uno de los principales dj's en Lima</p>
+          <button onclick="changePage();">Ver más</button>
+        </div>
+        <div class="services__card">
+          <h2>Bryan Osorio</h2>
+          <p>Talento chiclayano, residente en Night Club</p>
+          <button onclick="changePage();">Ver más</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Nosotros</h2>
+            <a href="/about.html">¿Quiénes somos?</a> <a href="/">Mision y Visión</a>
+            <a href="/">Preguntas frecuentes</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Sponsors</h2>
+            <a href="/">Colaboraciones</a> <a href="/">Campañas</a>
+
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Mixes</h2>
+            <a href="/">Subir mix</a> <a href="/">Contacto</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"><i class="fas fa-icicles" id="icono_logoo"></i>Los Cangri</a>
+          </div>
+          <p class="website__rights">LosCangri 2020 © All rights reserved</p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="#"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
