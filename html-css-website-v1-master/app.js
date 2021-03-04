@@ -30,3 +30,27 @@ function playAndPause(){
 function changePage(){
   window.location.href = 'http://127.0.0.1:5500/artista.html';
 }
+
+$(document).ready(function() {
+  $(".open").click(function() {
+    var container = $(this).parents(".topic");
+    var answer = container.find(".answer");
+    var trigger = container.find(".faq-t");
+  
+    answer.slideToggle(200);
+  
+    if (trigger.hasClass("faq-o")) {
+      trigger.removeClass("faq-o");
+    } else {
+      trigger.addClass("faq-o");
+    }
+  
+    if (container.hasClass("expanded")) {
+      container.removeClass("expanded");
+    } else {
+      container.addClass("expanded");
+    }
+  });
+
+  
+});

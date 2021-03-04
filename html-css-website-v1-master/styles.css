@@ -417,7 +417,6 @@
   height: auto;
   display: grid;
   place-items: center;
-  
 }
 
 .services h1 {
@@ -539,11 +538,12 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    height: 100%;
+    height: 95%;
   }
 
   .services h1 {
     font-size: 1.2rem;
+    margin-top: 6rem;
   }
 
   .services__card {
